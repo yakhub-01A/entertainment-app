@@ -1,0 +1,58 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "Login/Registration authentication App",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "npx nodemon --exec npx babel-node server.js",
+    "heroku-postbuild": "cd client && npm install && npm install && npm run build",
+    "server": "npx nodemon --exec npx babel-node server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@admin-bro/express": "^3.1.0",
+    "@admin-bro/mongoose": "^1.1.0",
+    "admin-bro": "^4.0.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "classnames": "^2.2.6",
+    "concurrently": "^5.0.2",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express-session": "^1.17.1",
+    "git": "^0.1.5",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "react-audio-player": "^0.17.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "uninstall": "0.0.0",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@types/node": "^15.3.0",
+    "babel-node": "0.0.1-security",
+    "babelrc": "0.0.7",
+    "eslint": "^7.26.0",
+    "nodemon": "^2.0.2"
+  },
+  "engines": {
+    "node": "12.13.1"
+  }
+}
