@@ -72,9 +72,22 @@ img {
     background-color: #FF6500;
 }
 
+.box-5:hover button::before {
+    width: 120%;
+    opacity: .8;
+    background-color: #FF6500;
+}
+
+.box-6:hover button::before {
+    width: 120%;
+    opacity: .8;
+    background-color: #FF6500;
+}
+
 .container {
     display: -webkit-box;
     display: -ms-flexbox;
+    border-radius: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,6 +102,8 @@ img {
 }
 
 .box {
+    margin-top: 50px;
+    margin-left: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -172,6 +187,36 @@ img {
     top: -85px
 }
 
+.box-5 button {
+    border: 1px solid #FF6500;
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-5 button::after {
+    content: "";
+    background-color: #FF6500;
+    top: -85px
+}
+
+.box-6 button {
+    border: 1px solid #FF6500;
+    color: #fff;
+    font-size: 22px;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+}
+
+.box-6 button::after {
+    content: "";
+    background-color: #FF6500;
+    top: -85px
+}
+
 .cover {
     -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
@@ -224,6 +269,14 @@ img {
 }
 
 .box-4 .cover::after {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png');
+}
+
+.box-5 .cover::after {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png');
+}
+
+.box-6 .cover::after {
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png');
 }
 
@@ -283,6 +336,34 @@ img {
     color: #fff;
 }
 
+.box-5 button div::before {
+    content: 'games';
+    position: relative;
+    top: -44px;
+    left: -9px;
+    color: #FF6500;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-5:hover button div::before {
+    color: #fff;
+}
+
+.box-6 button div::before {
+    content: 'chatbot';
+    position: relative;
+    top: -44px;
+    left: -9px;
+    color: #FF6500;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.box-6:hover button div::before {
+    color: #fff;
+}
+
 .dr {
     position: absolute;
     bottom: 16px;
@@ -307,7 +388,7 @@ img {
     height: 15%;
     display: flex;
     align-items: center;
-    background-image: linear-gradient( 140deg, 	#999999 0%, #737373 50%, #333333 75%);
+    background-image: linear-gradient( 100deg, #88ce70 0%,	#b1e6d5d7 50%,  #55a6f8db 75%);
     width: 100%;
 }
 
@@ -319,7 +400,7 @@ img {
 }
 
 .navbar h4:hover {
-    color: yellowgreen;
+    color: blueviolet;
     transition: 0.2s;
 }
 
@@ -340,19 +421,22 @@ nav {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: darkslategrey;
     font-size: 20px;
+    padding: 5px 10px;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    font-size: 21px;
     transition: 0.3s;
+    background: #5f857c;
+    border-radius: 20px;
+    color: #fff;
 }
 
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #333333 50%, #666666 50%);
+    background-image: linear-gradient(60deg, #808080 50%, #49555a 50%);
     bottom: 0;
     left: -50%;
     opacity: .5;

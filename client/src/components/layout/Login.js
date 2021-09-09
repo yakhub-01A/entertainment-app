@@ -5,6 +5,10 @@ import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
 import { Helmet } from "react-helmet";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 class Login extends Component {
   constructor() {
@@ -46,6 +50,28 @@ class Login extends Component {
     }
     this.props.loginUser(userData);
   }
+
+  redirect = () => {
+    let timerInterval
+    MySwal.fire({
+      icon: 'info',
+      title: 'Please contact admin to change your password',
+      timer: 3500,
+      html: '<span style="color:red"><b>Closes in</b></span> <span style="font-weight: bold;"><i></i></span>.',
+      timerProgressBar: true,
+      didOpen: () => {
+        MySwal.showLoading()
+        const b = MySwal.getHtmlContainer().querySelector('i')
+        timerInterval = setInterval(() => {
+          b.textContent = MySwal.getTimerLeft()
+        }, 10)
+      },
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    })
+  }
+
   render() {
     const { email, password, errors } = this.state;
     return (
@@ -56,6 +82,7 @@ class Login extends Component {
         <div className="box">
           <div className="form-box">
             <form className="login-form" onSubmit={this.onSubmit}>
+              <div><Link to="/"><i className="fa fa-arrow-circle-left "></i> Back to Home</Link></div>
               <h2>Login</h2>
               <hr />
               <div className="form-group">
@@ -93,7 +120,7 @@ class Login extends Component {
                 <button type="submit" className="btn btn-primary btn-block btn-lg">Login</button>
               </div>
               <div className="text-center">Don't have an account? <Link to="/register">Register</Link></div>
-              <div className="text-center">Forgot password? <Link to="/forgot_password">Change</Link></div>
+              <div className="text-center effect"> <a onClick={this.redirect}>Forgot Password?</a></div>
             </form>
           </div>
         </div>

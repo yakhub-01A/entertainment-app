@@ -50,13 +50,11 @@ class video extends Component {
                         return <div className="books">
                             <div className="book">
                                 <h3>{ada.id}</h3>
-
-
                                 <div className="details">
                                     <p className="head">Video</p>
                                     <hr></hr>
                                     <p className="type">Name: {ada.title}</p>
-                                    <iframe width="300" height="310" src={ada.video} title="video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <iframe width="300" height="310" src={ada.video} title="video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>

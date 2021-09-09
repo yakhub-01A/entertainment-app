@@ -12,7 +12,13 @@ class chatbot extends Component{
                 <div className="bg"></div>
                 <div className="bg bg2"></div>
                 <div className="bg bg3"></div>
-                <h1 className="title">Chat-Bot</h1>
+                <div className="frame">
+                    <iframe
+                        width="600"
+                        height="670"
+                        src="https://console.dialogflow.com/api-client/demo/embedded/0887a6ca-4aac-4992-8c26-cacef943f2ed">
+                    </iframe>
+                </div>
             </div>
         )
     }

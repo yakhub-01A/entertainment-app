@@ -27,8 +27,8 @@ class Dashboard extends Component {
             <h4><b>{user.name.split(" ")[0]}</b></h4>
             <nav>
               <ul>
-                <Link to="/feedback"><li><a href="#">Feedback</a></li></Link>
-                <li><a onClick={this.onLogout} href="">Logout</a></li>
+                <Link to="/feedback"><li><a href="#"><b>Feedback</b></a></li></Link>
+                <li><a onClick={this.onLogout} href=""><b>Logout</b></a></li>
               </ul>
             </nav>
           </div>
@@ -37,7 +37,7 @@ class Dashboard extends Component {
               <h1>ENT</h1>
               <p>Entertainment is everything</p>
             </div>
-            <div className="container" style={{ marginTop: '100px' }}>
+            <div className="container" style={{ marginTop: '25px',marginLeft: '300px' }}>
               <div className="box box-1">
                 <div className="cover">
                   <img
@@ -79,7 +79,7 @@ class Dashboard extends Component {
                   </button>
                 </Link>
               </div>
-              <div className="box box-4">
+              <div className="box box-5">
                 <div className="cover"><img
                   src="https://i.pinimg.com/originals/0e/03/f8/0e03f8e389b7a3b8ee4b5670cabb1975.gif" alt=""
                   style={{ width: '260px', height: '180px' }} /></div>
@@ -89,7 +89,7 @@ class Dashboard extends Component {
                   </button>
                 </Link>
               </div>
-              <div className="box box-4">
+              <div className="box box-6">
                 <div className="cover"><img
                   src="https://i.pinimg.com/originals/0e/03/f8/0e03f8e389b7a3b8ee4b5670cabb1975.gif" alt=""
                   style={{ width: '260px', height: '180px' }} /></div>
