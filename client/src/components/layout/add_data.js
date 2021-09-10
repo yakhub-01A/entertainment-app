@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 
 class Add_data extends Component {  
@@ -21,7 +25,11 @@ class Add_data extends Component {
 
     handleSubmit=(event)=>{
     event.preventDefault();
-    alert("submitted")
+    MySwal.fire({
+        icon: 'success',
+        title: 'Submitted',
+        text: 'Music data submitted',
+      })
     let databody = {
         "title":this.state.title,
         "image": this.state.image,
@@ -37,10 +45,16 @@ class Add_data extends Component {
     })
     .then(res => res.json())
     .then(data => console.log(data)); 
+
+    
 }
 handleSubmit1=(event)=>{
     event.preventDefault();
-    alert("submitted")
+    MySwal.fire({
+        icon: 'success',
+        title: 'Submitted',
+        text: 'Video data submitted',
+      })
     let databody = {
         "title2":this.state.title2,
         "video": this.state.video
@@ -58,7 +72,11 @@ handleSubmit1=(event)=>{
 }
 handleSubmit2=(event)=>{
     event.preventDefault();
-    alert("submitted");
+    MySwal.fire({
+        icon: 'success',
+        title: 'Submitted',
+        text: 'Comic data submitted',
+      })
     
     let databody = {
         "title3":this.state.title3,
@@ -80,7 +98,11 @@ handleSubmit2=(event)=>{
 handleSubmit3=(event)=>{
     event.preventDefault();
     
-    alert("submitted")
+    MySwal.fire({
+        icon: 'success',
+        title: 'Submitted',
+        text: 'Joke data submitted',
+      })
     let databody = {
         "number":this.state.number,
         "joke": this.state.joke
@@ -164,7 +186,7 @@ onChange = e => {
                                     <label for="page_number">Name:</label>
                                     <input type="text" class="form-control" id="page_number" value={this.state.title3} name="title3" onChange={this.onChange}></input>
                                     <br></br>
-                                    <label for="comic_img">Image URL:</label>
+                                    <label for="comic_img">Comic URL:</label>
                                     <input type="text" class="form-control" id="comic_img" value={this.state.imageURL} name="imageURL" onChange={this.onChange}></input>
                                     <br></br>
                                     <input type="submit" class="btn btn-info" value="Submit"></input>

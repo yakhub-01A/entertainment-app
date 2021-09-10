@@ -15,7 +15,7 @@ class Landing extends Component {
         <nav className="navbar navbar-inverse navbar-fixed-top">
         </nav>
         <div className="jumbotron text-center">
-            <video AutoPlay muted loop src={video}></video>
+            <video autoPlay="autoplay" muted="muted" loop="loop"  controls={false} src={video}></video>
           <div className="centered">
 					<p></p>
 				</div>

@@ -81,7 +81,7 @@ class Dashboard extends Component {
               </div>
               <div className="box box-5">
                 <div className="cover"><img
-                  src="https://i.pinimg.com/originals/0e/03/f8/0e03f8e389b7a3b8ee4b5670cabb1975.gif" alt=""
+                  src="https://c.tenor.com/vK4BBOuyxZIAAAAM/gaming-timmy-turner.gif" alt=""
                   style={{ width: '260px', height: '180px' }} /></div>
                 <Link to="/game">
                   <button className="button">
@@ -91,7 +91,7 @@ class Dashboard extends Component {
               </div>
               <div className="box box-6">
                 <div className="cover"><img
-                  src="https://i.pinimg.com/originals/0e/03/f8/0e03f8e389b7a3b8ee4b5670cabb1975.gif" alt=""
+                  src="https://cdn.dribbble.com/users/464600/screenshots/2863054/bot-emotions-principle.gif" alt=""
                   style={{ width: '260px', height: '180px' }} /></div>
                 <Link to="/chatbot" target="_blank">
                   <button className="button">

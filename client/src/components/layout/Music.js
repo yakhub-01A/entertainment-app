@@ -57,7 +57,7 @@ class music extends Component {
                                         <p className="type">Genres: {ada.title}</p>
                                         <img src={ada.image} alt="Avatar" style={{ width: '300px', height: '300px' }}></img>
                                         <div>
-                                            <ReactAudioPlayer src={ada.music} controls />
+                                            <ReactAudioPlayer src={ada.music} controls="true" />
                                         </div>
                                     </div>
                                 </div>

@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
+
+const MySwal = withReactContent(Swal)
 
 class Feedback extends Component {
     constructor() {
@@ -14,7 +18,11 @@ class Feedback extends Component {
 
     handleSubmit=(event)=>{
         event.preventDefault();
-        alert("submitted")
+        MySwal.fire({
+            icon: 'success',
+            title: 'Submitted',
+            text: 'Feedback data submitted',
+          })
         let databody = {
             "comments":this.state.comments,
             "name": this.state.name,

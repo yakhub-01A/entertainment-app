@@ -57,7 +57,7 @@ class Comic extends Component {
                                     <p className="head">Comic</p>
                                     <hr></hr>
                                     <p className="type">Name: {ada.title}</p>
-                                    <iframe width="100%" height="450" src={ada.imageURL} frameborder="0" allow="fullscreen"></iframe>
+                                    <iframe width="100%" height="450" src={ada.imageURL} frameborder="0" allowFullScreen="true"></iframe>
                                 </div>
                             </div>
                         </div>
