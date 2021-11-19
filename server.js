@@ -11,7 +11,7 @@ const videos =require("./routes/api/videos");
 const musics =require("./routes/api/music");
 const feed =require("./routes/api/feed");
 const add_data =require("./routes/api/add_data");
-require("dotenv").config();
+require('dotenv').config()
 
 
 
@@ -64,7 +64,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 app.listen(port,()=>console.log(`Server up and running on port ${port}`));
 
