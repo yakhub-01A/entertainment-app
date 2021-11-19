@@ -19,6 +19,7 @@
     "react-scripts": "^4.0.3",
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0",
+    "serve": "^13.0.2",
     "sweetalert2": "^11.1.5",
     "sweetalert2-react-content": "^4.1.1"
   },
