@@ -11,6 +11,7 @@ const videos =require("./routes/api/videos");
 const musics =require("./routes/api/music");
 const feed =require("./routes/api/feed");
 const add_data =require("./routes/api/add_data");
+require("dotenv").config();
 
 
 
@@ -25,7 +26,7 @@ app.use(
 
 app.use(bodyParser.json());
 
-const dbURL =  "mongodb://localhost:27017/mern-auth";
+const dbURL =  "mongodb+srv://yakhub:yakhub@ent-app.qq0zn.mongodb.net/mern-auth";
 
 //connect to MongoDB
 mongoose
@@ -63,7 +64,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3001;
 
 app.listen(port,()=>console.log(`Server up and running on port ${port}`));
 
