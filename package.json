@@ -44,16 +44,7 @@
     "redux-thunk": "^2.3.0",
     "serve": "^13.0.2",
     "uninstall": "0.0.0",
-    "validator": "^13.7.0",
-    "@babel/cli": "^7.16.0",
-    "@babel/core": "^7.7.7",
-    "@babel/node": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@types/node": "^15.3.0",
-    "babel-node": "0.0.1-security",
-    "babelrc": "0.0.7",
-    "eslint": "^7.26.0",
-    "nodemon": "^2.0.2"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
