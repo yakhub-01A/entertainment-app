@@ -21,11 +21,10 @@
     "@admin-bro/mongoose": "^1.1.0",
     "admin-bro": "^4.0.1",
     "axios": "^0.21.1",
-    "babel-cli": "^6.26.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
-    "concurrently": "^5.0.2",
+    "concurrently": "^6.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
@@ -35,7 +34,7 @@
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",
     "mongodb": "^3.6.6",
-    "mongoose": "^5.12.6",
+    "mongoose": "^6.0.13",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "react-audio-player": "^0.17.0",
@@ -45,7 +44,7 @@
     "redux-thunk": "^2.3.0",
     "serve": "^13.0.2",
     "uninstall": "0.0.0",
-    "validator": "^12.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
