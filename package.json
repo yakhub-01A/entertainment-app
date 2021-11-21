@@ -5,13 +5,12 @@
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
-    "start": "npx nodemon --exec npx babel-node server.js",
+    "start": "babel-node server.js",
     "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
     "heroku-postbuild": "npm run install-client && npm run build",
-    "server": "npx nodemon --exec npx babel-node server.js",
+    "server": "nodemon server.js --exec babel-node",
     "client": "npm start --prefix client",
-    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false;",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
@@ -48,6 +47,9 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "babel": "6.23.0",
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.0",
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.7.7",
     "@babel/node": "^7.7.7",
