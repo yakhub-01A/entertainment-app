@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(240, 202, 202);
+    max-width: 100%;
+}
+
+.title1 {
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #CA4246 16%, #E16541 33%, #F18F43 30%, #F18F43 20%, #476098 66%, #476098 83%, #A7489B 83%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(45deg, #c0c6da 50%, #bdd58f 50%, #e4a5a5 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 7s;
+}
+
+.bg3 {
+    animation-duration: 6s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.frame{
+    position: relative;
+    margin-left: 500px;
+    margin-top: 20px;
+
+}
