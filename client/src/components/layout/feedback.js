@@ -56,11 +56,11 @@ class Feedback extends Component {
                     <a className="logo" href=""><span className="logo_name">ENT APP</span></a>
                     <nav>
                         <ul>
-                            <Link to="/dashboard"><li><a href="">Home</a></li></Link>
-                            <Link to="/music"><li><a href="">Music</a></li></Link>
-                            <Link to="/video"><li><a href="">Videos</a></li></Link>
-                            <Link to="/comic"><li><a href="">Comics</a></li></Link>
-                            <Link to="/joke"><li><a href="">Jokes</a></li></Link>
+                            <Link to="/dashboard"><li>Home</li></Link>
+                            <Link to="/music"><li>Music</li></Link>
+                            <Link to="/video"><li>Videos</li></Link>
+                            <Link to="/comic"><li>Comics</li></Link>
+                            <Link to="/joke"><li>Jokes</li></Link>
                         </ul>
                     </nav>
                     <div className="clearfix"></div>
